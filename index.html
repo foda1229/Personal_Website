@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi, I'm Steven Wu</title>
+    <link rel="stylesheet" href="fontawesome-free-5.0.8\web-fonts-with-css\css\fontawesome-all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url("website_cover.png");
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+
+        .title {
+            height: 734px;
+            width: 1519px;
+            margin: 0;
+        }
+
+        .title h1,
+        h3 {
+            color: rgb(15, 15, 17);
+            text-shadow: 2px 2px 5px #333333;
+        }
+
+        .title h3 {
+            padding-top: 235px;
+            padding-left: 320px;
+            font-size: 30px;
+        }
+
+        .title h1 {
+            padding-left: 230px;
+            font-size: 50px;
+        }
+
+        h1::after,
+        h1::before {
+            content: " —— ";
+            font-size: 20px;
+            color: rgb(35, 35, 36);
+            vertical-align: 12px;
+
+        }
+
+        .icon i {
+            margin-left: 0px;
+            opacity: 0.8;
+            box-shadow: 4px 4px 5px grey;
+            border-radius: 5px;
+            padding: 2px;
+            width: 5px;
+        }
+
+        .icon {
+            margin-left: 385px;
+            width: 5px;
+            padding-bottom: 15px;
+        }
+
+        .iconlink {
+            display: none;
+            background-color: #f9f9f9;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            background-color: rgb(194, 194, 189);
+            text-shadow: 1px 1px 3px #000000;
+            border-radius: 8px;
+        }
+
+        .iconlink a {
+            text-decoration: none;
+            font-size: 30px;
+            color:rgb(15, 15, 15);
+        }
+        .iconlink a:hover{
+            background-color: lightseagreen;
+            border-radius: 4px;
+        }
+
+        .icon:hover .iconlink {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h3>
+            <i>Hello, I'm</i>
+        </h3>
+        <h1>Steven Wu</h1>
+        <div class="icon">
+            <i class="fas fa-list-ul">
+            </i>
+            <div class="iconlink">
+                <a href="#">Profile</a>
+                <br>
+                <a href="#">Experience</a>
+                <br>
+                <a href="#">Education</a>
+                <br>
+                <a href="#">Life of Beauty</a>
+                <br>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
