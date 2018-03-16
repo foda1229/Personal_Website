@@ -17,12 +17,21 @@
             background-image: url("website_cover.png");
             background-attachment: fixed;
             background-size: 100%;
+
         }
 
         .title {
+            float: left;
             height: 734px;
-            width: 1519px;
+            width: 100%;
             margin: 0;
+
+        }
+
+        h1 {
+            color: rgb(15, 15, 17);
+
+            font-size: 50px;
         }
 
         .title h1,
@@ -48,7 +57,7 @@
             font-size: 20px;
             color: rgb(35, 35, 36);
             vertical-align: 12px;
-
+            letter-spacing: -1px;
         }
 
         .icon i {
@@ -70,9 +79,9 @@
             display: none;
             background-color: #f9f9f9;
             min-width: 250px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            background-color: rgb(194, 194, 189);
+            background-color: rgb(225, 229, 230);
             text-shadow: 1px 1px 3px #000000;
             border-radius: 8px;
         }
@@ -80,15 +89,189 @@
         .iconlink a {
             text-decoration: none;
             font-size: 30px;
-            color:rgb(15, 15, 15);
-        }
-        .iconlink a:hover{
-            background-color: lightseagreen;
-            border-radius: 4px;
+            color: rgb(15, 15, 15);
         }
 
+        .iconlink a:hover {
+            background-color:white;
+            border-radius: 4px;
+            color:mediumblue;
+            border: 2px solid rgb(74, 60, 196);
+        }
+        
         .icon:hover .iconlink {
             display: block;
+        }
+
+        .profile {
+            border-top: 1px solid grey;
+            background: white;
+            padding: 10px;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 750px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .education {
+            border-top: 1px solid grey;
+            background: white;
+            padding: 10px;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 3430px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .experience {
+            background: rgb(216, 216, 216);
+            padding: 10px;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 1060px;
+            padding-left: 100px;
+            padding-right: 100px;
+            width: 100%;
+        }
+        .beautyofLife {
+            background: rgb(216, 216, 216);
+            padding: 10px;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 5400px;
+            padding-left: 100px;
+            padding-right: 100px;
+            width: 100%;
+        }
+
+        .profile h1,
+        .experience h1,
+        .education h1,
+        .beautyofLife {
+            text-align: center;
+        }
+
+        .profile img,
+        .experience img,
+        .education img {
+            float: left;
+            width: 200px;
+            margin-right: 40px;
+            border-radius: 8px;
+        }
+
+
+
+        .language img {
+            float: right;
+            width: 800px;
+            margin-right: 40px;
+            border-radius: 8px;
+            border: 1px outset lightblue;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+
+        .profile p,
+        .experience p,
+        .education p {
+            text-indent: 1em;
+            font-size: 25px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        .experience h4 {
+            padding-top: 28px;
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .PersonalStudio h4 {
+            padding-top: 4px;
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .TSMC h4 {
+            padding-top: 6px;
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .military h4 {
+            padding-top: 0px;
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .NTHU h4 {
+            padding-top: 20px;
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .NCKU h4 {
+            padding-top: 30px;
+            color: #333333;
+            font-size: 25px;
+        }
+        .beautyofLife h4 {
+            padding-top: 30px;
+            color: #333333;
+            font-size: 25px;
+            text-align: left;
+            text-indent: 1em;
+        }
+        .language {
+            padding-top: 30px;
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .lifeimg img{
+            width: 10%;        
+            float: left;
+            padding: 0%;
+            margin: 3px;
+            border-radius: 3px;
+            box-shadow: 3px 3px 5px grey;
+        }
+        .lifeimg{
+            position: relative;
+        }
+        .lifeimg:hover{
+            height: 2500px;
+        }
+        .lifeimg img:hover {
+            width: 95%;
+            clear:left;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 2;
+        }
+        .contact a{
+            padding-left: 390px;
+            color: black;
+        }
+        .contact{
+            position: absolute;
+            top:670px;
+        }
+        .contactlect
+        {
+            position: absolute;
+            top:680px;
+            left:342px;
+            color: rgb(19, 19, 20);
+            text-shadow: 3px 3px 4px grey;
         }
     </style>
 </head>
@@ -103,19 +286,226 @@
             <i class="fas fa-list-ul">
             </i>
             <div class="iconlink">
-                <a href="#">Profile</a>
+                <a href="#profile">Profile</a>
                 <br>
-                <a href="#">Experience</a>
+                <a href="#experience">Experience</a>
                 <br>
-                <a href="#">Education</a>
+                <a href="#education">Education</a>
                 <br>
-                <a href="#">Life of Beauty</a>
-                <br>
-                <a href="#">Contact</a>
+                <a href="#beautyofLife">Beauty of Life</a>
             </div>
         </div>
+        <div class="contact">
+            <a href="https://www.facebook.com/foda1229" target="_blank">
+            <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <div class="contactlect">
+            <p>Let's get in touch!</p>
+        </div>
     </div>
+    <div class="profile" id="profile">
+        <h1>Profile</h1>
+        <img src="software1.png" alt="software_image">
+        <p>To pursue my dream, I'm now on the road to becoming a software engineer after process engineering with 3.5 years
+            of experience working at TSMC in the semiconductor manufacturing industry. Capable of solving process problems
+            and issues, and possess a wide range of technical skills. Enjoys being part of a team, and working undor high
+            pressure. Professional, capable and inspiring individuals who persistently in challenging environments.</p>
+    </div>
+    <div class="experience" id="experience">
+        <h1>Experience</h1>
+        <div class="cmoney">
+            <a href="http://www.cmoney.tw/" target="_blank">
+                <img src="cmoney.png" alt="cmoney">
+            </a>
+            <h4>
+                CMoney
+                <br>
+                <br> Software Engineering Intern, Since March 2018
+                <br>
+                <br> Taipei, Taiwan
+            </h4>
+            <h4>About Cmoney CMoney</h4>
+            <p>
+                Institutional Investors Investment Decision Support System (CM) is the only available decision support system that allows
+                flexible setting of analysis logic, customized formula and filter logic, and customized analysis rules, allowing
+                users to measure and testify decision performance.</p>
+            <h4>Achievement</h4>
+            <p style="text-indent:0">
+                1. HTML & CSS learning and building my first personal website in week1 and week2.
+                <br>
+                <br> 2. GitHub repository setting and C# fundamental study in week3.
+            </p>
+        </div>
+        <div class="PersonalStudio">
+            <a href="">
+                <img src="stock.jpg" alt="PersonalStudio">
+            </a>
+            <h4>
+                Personal-Studio
+                <br>
+                <br> Stock, ETF, Future, Option Trading, April 2017 - March 2018
+                <br>
+                <br> Kaohsiung, Taiwan
+            </h4>
 
+            <p>
+                <br> 1.Stock, ETF investment, future and option trading of long term and short term financial production.
+                <br>
+                <br>
+            </p>
+
+        </div>
+        <div class="TSMC">
+            <a href="http://www.tsmc.com/chinese/default.htm" target="_blank">
+                <img src="tsmc.png" alt="TSMC">
+            </a>
+            <h4>
+                TSMC
+                <br>
+                <br> Process Engineer (Etching & Wet Clean), October 2013 – 2017 April
+                <br>
+                <br> Tainan, Taiwan
+                <br>
+            </h4>
+            <h4>About TSMC</h4>
+            <p>
+                Established in 1987, TSMC is the world's first dedicated semiconductor foundry. As the founder and a leader of the Dedicated
+                IC Foundry segment, TSMC has built its reputation by offering advanced and "More-than-Moore" wafer production
+                processes and unparalleled manufacturing efficiency. From its inception, TSMC has consistently offered the
+                foundry segment's leading technologies and TSMC COMPATIBLE® design services.
+            </p>
+            <h4>Achievement</h4>
+            <p style="text-indent:0">
+                1. Accomplished a cross-departments project of an automatically manufacturing sequence on front-end wafer clean processes
+                by an equipment maintain system. Reduce 14 percent of manpower and decrease the manual operation risk to
+                zero.
+                <br>
+                <br> 2. Executing a dummy season wafer reclaim route changing from external to in-house process. 80% cost-saving
+                achievement through the project.
+                <br>
+                <br> 3. Back-end process flow of CIS production wet clean knowledge application of defect problems solving and
+                trouble issues handling.
+                <br>
+                <br> 4. SOP skills and guidelines delivering from Etching Dep. to Diffusion Dep. because of the departments merge
+                for the company policy arrangement.
+                <br>
+                <br> 5. Optimizing Statistical Process Control(SPC) charts as spec and control limit setting to accurate the
+                trouble shooting procedure. Increasing 20% quality of equipment maintain.
+                <br>
+                <br> 6. Accomplishing on duty independently ability in standard 6 months to contribute sharing the on duty work
+                loading in the team.
+            </p>
+        </div>
+        <div class="military">
+            <a href="">
+                <img src="military.jpg" alt="MilitaryService">
+            </a>
+            <h4>
+                Military Service
+                <br>
+                <br> Marine, December 2012 – October 2013
+                <br>
+                <br> Taitung, Taiwan
+            </h4>
+            <h4>Achievement</h4>
+            <p style="text-indent:0">
+                1. Serviced at Ministry of National Defense as marine.
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="education" id="education">
+        <h1>Education</h1>
+        <div class="NTHU">
+            <a href="http://www.nthu.edu.tw/" target="_blank">
+                <img src="NTHU.png" alt="國立清華大學">
+            </a>
+            <h4>
+                National Tsing Hua University
+                <br>
+                <br> Master Degree of Chemical Engineering, September 2010 – September 2012
+                <br>
+                <br> Hsinchu, Taiwan
+            </h4>
+            <h4>About National Tsing Hua University</h4>
+            <p>
+                National Tsing Hua University was established in Beijing in 1911 as “Tsing Hua Academy.” In 1956, National Tsing Hua University
+                was re-established at its present location in Hsinchu, Taiwan. Since its relocation, NTHU has developed into
+                a comprehensive research university offering a full range of degree programs in science, technology, engineering,
+                humanities, social sciences, and management. NTHU consistently ranks as one of the premier universities in
+                East Asia, and is widely recognized as a leading incubator for future leaders.
+            </p>
+            <h4>Achievement</h4>
+            <p style="text-indent:0">
+                1. Design of Experiments (DOE) principles application on solar conversion interface of optical to electrical researching
+                with materials of P3HT and PCBM.
+                <br>
+                <br> 2. Knowledge development of polymer and chemical relating subjects.
+                <br>
+                <br> 3. 3.7GPA
+            </p>
+        </div>
+        <div class="NCKU">
+            <a href="http://www.ncku.edu.tw/" target="_blank">
+                <img src="NCKU.png" alt="國立成功大學">
+            </a>
+            <h4>
+                National Cheng Kung University
+                <br>
+                <br> Bachelor Degree of Chemical Engineering, September 2006 – September 2010
+                <br>
+                <br> Tainan, Taiwan
+            </h4>
+            <h4>About National Cheng Kung University</h4>
+            <p>
+                National Cheng Kung University is a research-led comprehensive university in Tainan, Taiwan. Considered one of the most prestigious
+                universities in Taiwan and one of the top ranked universities in Asia. It consists of 9 colleges, 43 departments,
+                and 39 institutes. The university is best known for its engineering, computer science, medicine, and planning
+                and design.
+            </p>
+            <h4>Achievement</h4>
+            <p style="text-indent:0">
+                1. Subjects study, including Thermodynamics, Fluid mechanics, Organic Chemistry, Transport phenomena and unit operations,
+                etc.
+            </p>
+        </div>
+        <div class="language">
+            <a href="">
+                <img src="toeic.png" alt="ToeicScore">
+            </a>
+            <h4>
+                Language
+            </h4>
+            <p style="text-indent:0">
+                1. Mandarin: native language
+                <br>
+                <br> 2. English: TOEIC 885
+            </p>
+        </div>
+
+    </div>
+    <div class="beautyofLife" id="beautyofLife">
+        <h1>Beauty of Life</h1>
+        <h4>
+        Some special memories that stay in my mind, and the stunning scenery that I record it while traveling.   
+        </h4>
+        <div class="lifeimg">
+        <img src="2017626只只生日墾丁遊_180316_0004.jpg" alt="birthdayTravel">
+        <img src="2017626只只生日墾丁遊_180316_0008.jpg" alt="birthdayTravel">
+        <img src="2017626只只生日墾丁遊_180316_0028.jpg" alt="birthdayTravel">
+        <img src="2017626只只生日墾丁遊_180316_0042.jpg" alt="birthdayTravel">
+        <img src="熊大.jpg" alt="birthdayTravel">
+        <img src="鶯歌星巴客_180316_0008.jpg" alt="墾丁">
+        <img src="美國遊玩.jpg" alt="America">
+        <img src="韓國遊玩.jpg" alt="Korea">
+        <img src="小時候照片(喵齊)_180316_0018.jpg" alt="ChildHood">
+        </div>
+        
+    </div>
+    <div class="contact">
+            
+    </div>
 
 </body>
 
